@@ -36,7 +36,7 @@
                             <label class="float-left"></label>
                         </div>
                         <div class="input-group">
-                            <input name="password" type="password" class="form-control form-control-lg" value="123456">
+                            <input name="password" type="password" class="form-control form-control-lg" value="Hoang123">
                             <span class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
