@@ -38,14 +38,14 @@
                                 @endif
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <span class="pf-title">Email <span class="text-danger">*</span></span>
                                 <input type="text" name="email" class="form-control"
                                     value="{{ Auth::user()->email }}" placeholder="Email">
                                 @if($errors->first('email'))
                                     <span class="text-danger"> {{$errors->first('email')}} </span>
                                 @endif
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">

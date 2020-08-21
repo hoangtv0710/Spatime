@@ -53,6 +53,9 @@ class HomeController extends Controller
 
     public function changePassword()
     {
+        if(Auth::user()->role = 100){
+            return redirect('thong-tin')->with('abort403', 'Không thể thực hiện chức năng này trên tài khoản test');
+        }
         return view('user.change_password');
     }
 

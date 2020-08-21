@@ -61,3 +61,10 @@
         </div>
     </section>
 @endsection
+@section('alert')
+    @if (session('abort403'))
+        <script>
+            toastr.error('{{ session('abort403')}}', {timeOut: 2000});
+        </script>
+    @endif
+@endsection

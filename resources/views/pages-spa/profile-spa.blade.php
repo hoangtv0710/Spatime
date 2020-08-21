@@ -24,7 +24,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-sm-12">
+                            {{-- <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="form-group">
                                     <label> Email:</label>
                                     <input type="text" value="{{ Auth::guard('spa')->user()->email }}" name="email"
@@ -33,7 +33,7 @@
                                         <span class="text-danger">{{ $errors->first('email')}}</span>
                                     @endif
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="form-group">

@@ -31,8 +31,8 @@ class ProfileSpaRequest extends FormRequest
             'location' => 'required',
             'phone' => 'required',
             'image' => 'bail|nullable|mimes:jpeg,png,jpg,gif,svg',
-            'email' => ['bail', 'required', 'email', 'max:255',
-                Rule::unique('spas')->ignore(Auth::guard('spa')->user()->id)],
+            // 'email' => ['bail', 'required', 'email', 'max:255',
+            //     Rule::unique('spas')->ignore(Auth::guard('spa')->user()->id)],
         ];
     }
 

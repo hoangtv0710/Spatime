@@ -109,6 +109,9 @@ class SpaController extends Controller
 
     public function changePass()
     {
+        if(Auth::guard('spa')->user()->email = 'hoang.backend@gmail.com'){
+            return redirect('spa')->with('abort403', 'Không thể thực hiện chức năng này trên tài khoản test');
+        }
         return view('pages-spa.change-pass');
     }
 
